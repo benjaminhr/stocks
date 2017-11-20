@@ -17,16 +17,11 @@ var stockTable = () => {
     var result = '<tr> <th>Stock Name</th> <th>Amount</th> <th>Current Total Value</th> </tr>'
 
     for (var stock in stocks) {
-      fetch('http://localhost:8080/api/quote/' + stock)
-        .then(data => data.json())
-        .then(json => {
-          result += `<tr><td>${stock}</td><td>${stocks[stock]}</td> <td>${json.price * stocks[stock]}$</td> </tr>`
-          console.log('Stock name ' + stock + ' stock price: ' + stocks[stock])
-        })
-        .then(() => {
-          table.innerHTML = result
-        })
+      console.log(stock)
+      result += `<tr><td>${stock}</td><td>${stocks[stock].amount}</td> <td>${stocks[stock].price}</td> </tr>`
     }
+
+    table.innerHTML = result
   }
 }
 
@@ -69,7 +64,10 @@ var buy = () => {
           button.style.color = '#555'
           button.innerText = 'Bought ' + json.symbol + ': ' + total + '$'
 
-          stocks[json.symbol] = amount
+          stocks[json.symbol] = {
+            'amount':amount,
+            'price':json.price
+          }
           cashAmount -= total;
           profile();
           stockTable();
