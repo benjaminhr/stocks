@@ -17,8 +17,10 @@ var stockTable = () => {
     var result = '<tr> <th>Stock Name</th> <th>Amount</th> <th>Current Total Value</th> </tr>'
 
     for (var stock in stocks) {
-      console.log(stock)
-      result += `<tr><td>${stock}</td><td>${stocks[stock].amount}</td> <td>${stocks[stock].price}</td> </tr>`
+      var name = stock
+      var amount = stocks[stock].amount
+      var total = stocks[stock].price * amount
+      result += `<tr><td>${name}</td><td>${amount}</td> <td>${total}$</td> </tr>`
     }
 
     table.innerHTML = result
