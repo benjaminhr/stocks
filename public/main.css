@@ -1,0 +1,54 @@
+body {
+  background-color:#e8e8e8;
+}
+
+.container {
+  margin-top:10%;
+}
+
+.container:first-child {
+  margin-top:5px;
+}
+
+.wrapper {
+  display:flex;
+  justify-content: center;
+}
+
+.buy, .sell {
+  width:400px;
+}
+
+.quote {
+  margin-bottom:0px !important;
+}
+
+.card {
+  background-color:white;
+  padding:20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  text-align: center;
+  margin:20px;
+}
+
+.card .title {
+  font-size:20px;
+  text-align: center;
+  font-weight:bold;
+}
+
+.card .result {
+  color:#33C3F0;
+  font-size:20px;
+  margin-bottom:0px;
+}
+
+label {
+  color:#33C3F0;
+}
+
+.profile p {
+  margin-bottom: 0px;
+  font-weight:bold;
+
+}
