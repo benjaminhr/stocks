@@ -1,3 +1,4 @@
+var url = window.location.href + 'api/quote/'
 var cashAmount = 10000;
 var stocks = {}
 
@@ -72,7 +73,6 @@ var stockTable = () => {
 
 var quote = () => {
   var button = document.querySelector('.quote > button')
-  var url = 'http://localhost:8080/api/quote/'
 
   button.addEventListener('click', () => {
     var quote = document.querySelector('.quote > input').value
@@ -89,7 +89,6 @@ var quote = () => {
 
 var buy = () => {
   var button = document.querySelector('.buy > button')
-  var url = 'http://localhost:8080/api/quote/'
 
   var reset = () => {
     setTimeout(() => {
@@ -136,8 +135,6 @@ var buy = () => {
 
 var sell = () => {
   var button = document.querySelector('.sell > button')
-  var url = 'http://localhost:8080/api/quote/'
-
 
   var reset = () => {
     setTimeout(() => {

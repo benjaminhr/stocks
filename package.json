@@ -15,5 +15,8 @@
     "express": "^4.16.2",
     "google-finance": "^0.1.10",
     "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
