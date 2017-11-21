@@ -19,7 +19,7 @@ var stockTable = () => {
     for (var stock in stocks) {
       var name = stock
       var amount = stocks[stock].amount
-      var total = stocks[stock].price * amount
+      var total = Math.round(stocks[stock].price * amount)
       result += `<tr><td>${name}</td><td>${amount}</td> <td>${total}$</td> </tr>`
     }
 
