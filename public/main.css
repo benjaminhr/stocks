@@ -20,7 +20,17 @@ body {
 }
 
 .quote {
-  margin-bottom:0px !important;
+  margin-bottom:20px !important;
+}
+
+.quote .result {
+  margin-top:20px;
+  letter-spacing: 1px;
+}
+
+.quote .button-wrapper button {
+  margin-top:10px;
+  margin-right:10px;
 }
 
 .card {
@@ -28,7 +38,7 @@ body {
   padding:20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   text-align: center;
-  margin:20px;
+  margin:20px 20px 0px 20px;
 }
 
 .card .title {
@@ -50,5 +60,5 @@ label {
 .profile p {
   margin-bottom: 0px;
   font-weight:bold;
-
 }
+
