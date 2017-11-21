@@ -16,7 +16,7 @@ body {
 }
 
 .buy, .sell {
-  width:400px;
+  width:410px;
 }
 
 .quote {
@@ -33,12 +33,21 @@ body {
   margin-right:10px;
 }
 
+.quote img {
+  max-width: 100%;
+  height: auto;
+}
+
 .card {
   background-color:white;
   padding:20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   text-align: center;
   margin:20px 20px 0px 20px;
+}
+
+.sell {
+  margin-left: 0px !important;
 }
 
 .card .title {
